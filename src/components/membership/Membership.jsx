@@ -17,7 +17,6 @@ import {
 
 
 const Membership = () => {
-    console.log(data?.map((item) => console.log(item)))
 
     return (
         <div className='flex justify-center  '>
@@ -67,8 +66,8 @@ const Membership = () => {
                             </div>
 
                             <div className='  flex flex-col gap-5 py-5 px-2 justify-start items-start  h-full'>
-                                {item.tips.map((tip) => (
-                                    <div className='flex items-center gap-2 '>
+                                {item.tips.map((tip,index) => (
+                                    <div className='flex items-center gap-2 ' key={index}>
                                         <span className='icon-material-symbols_check-circle-outline-rounded '></span>
                                         <span>{tip}</span>
                                     </div>
