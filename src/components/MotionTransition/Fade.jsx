@@ -5,7 +5,7 @@ import { useAnimation, useInView, motion } from 'framer-motion'
 import { useEffect, useRef } from 'react'
 import { fade } from '../utils/Transition'
 
-const Fade = ({ children, className }) => {
+const Fade = ({ children, className,key }) => {
 
     const ref = useRef(null)
     const isinView = useInView(ref, { once: false })
@@ -27,6 +27,7 @@ const Fade = ({ children, className }) => {
                 initial="hidden"
                 animate={mainControls}
                 exit="hidden"
+                key={key}
                 className={className}
             >
                 {children}
