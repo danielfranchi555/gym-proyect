@@ -35,8 +35,8 @@ const Membership = () => {
                                     <p className='text-2xl font-bold'>{item.price}</p>
                                 </div>
                                 <div className='flex flex-col gap-5 px-5 py-5 min-h-[290px] max-h-[290px]   '>
-                                    {item.tips.map((tip) => (
-                                        <div className='flex items-center gap-2  '>
+                                    {item.tips.map((tip,index) => (
+                                        <div key={index} className='flex items-center gap-2  '>
                                             <span className='icon-material-symbols_check-circle-outline-rounded '></span>
                                             <span className='text-[20px]'>{tip}</span>
                                         </div>

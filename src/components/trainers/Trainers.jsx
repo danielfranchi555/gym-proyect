@@ -39,8 +39,8 @@ const Trainers = () => {
                 </div>
             </Carousel>
             <div className='hidden  w-[90%] mx-auto md:grid md:grid-cols-3 lg:grid lg:grid-cols-4 gap-5 '>
-                {data.map((item) => (
-                    <div className='bg-[#222] justify-center items-center rounded-lg max-w-max hover:bg-[#FAFF00] ease-in duration-300 group cursor-pointer'>
+                {data.map((item,index) => (
+                    <div key={index} className='bg-[#222] justify-center items-center rounded-lg max-w-max hover:bg-[#FAFF00] ease-in duration-300 group cursor-pointer'>
                         <Image src={item.imagen} width='auto' height='auto' className='py-4 px-4 ' />
                         <p className='font-bold text-[15px] text-center group-hover:text-black'>{item.nombre}</p>
                         <div className='flex justify-center gap-3 py-4 rounded-t-sm group cursor-pointer '>
