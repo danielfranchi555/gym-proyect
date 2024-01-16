@@ -58,8 +58,8 @@ const Membership = () => {
             </Carousel>
 
             <div className='hidden md:grid md:grid-cols-3 md:gap-5 justify-between h-full rounded-xl '>
-                {data.map((item) => (
-                    <Fade>
+                {data.map((item,index) => (
+                    <Fade key={index}>
                         <Card className='card  bg-[#222] w-[275px] h-[397px] flex flex-col justify-between '>
                             <div className='flex flex-col justify-center items-center bg-[#FAFF00] rounded-t-lg text-black h-[112px] py-5'>
                                 <span className='text-[20px] font-bold'>{item.title}</span>
