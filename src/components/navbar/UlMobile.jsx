@@ -1,13 +1,13 @@
 import Link from 'next/link'
 import React from 'react'
 
-const UlMobile = () => {
+const UlMobile = ({toggle}) => {
     return (
-        <ul className='md:hidden px-5 py-3 flex flex-col gap-2 bg-black'>
-            <Link href='/'>Advantages</Link>
-            <Link href='/'>Membership</Link>
-            <Link href='/'>About</Link>
-            <Link href='/'>Trainers</Link>
+        <ul className='flex flex-col  items-center justify-center gap-12'>
+            <Link href='#home'       onClick={toggle} className='text-4xl font-bold'>Home</Link>
+            <Link href='#membership' onClick={toggle} className='text-4xl font-bold'>Membership</Link>
+            <Link href='#about'      onClick={toggle} className='text-4xl font-bold'>About</Link>
+            <Link href='#trainers'   onClick={toggle} className='text-4xl font-bold'>Trainers</Link>
         </ul>
     )
 }

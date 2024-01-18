@@ -7,7 +7,7 @@ import Fade from '../MotionTransition/Fade'
 
 const about = () => {
     return (
-        <div className='flex flex-col gap-5 justify-center items-center '>
+        <div id='about'  className='flex flex-col gap-5 justify-center items-center '>
             <Fade>
                 <h4 className='text-3xl text-center md:text-left  w-full md:hidden' >About us</h4>
             </Fade>
@@ -15,7 +15,7 @@ const about = () => {
                 <div className='flex flex-col items-center gap-5   md:justify-start '>
                     <div className=' w-full'>
                         <Fade>
-                            <h5 className='text-start w-full text-3xl hidden md:block'>About Us</h5>
+                            <h5 className='text-start w-full text-4xl font-bold hidden md:block'>About Us</h5>
                         </Fade>
                     </div>
                     <FadeLeft>

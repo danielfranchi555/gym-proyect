@@ -34,7 +34,7 @@ export const fadeIn = () =>{
         opacity: 0,
         transition: {
           type: "tween",
-          duration: 0.1,
+          duration: 1.5,
           delay: 0.1,
           ease: [0.25, 0.6, 0.3, 0.8],
         },
@@ -44,7 +44,7 @@ export const fadeIn = () =>{
         opacity: 1,
         transition: {
           type: "tween",
-          duration: 1.3,
+          duration: 1.5,
           delay: 0.1,
           ease: [0.25, 0.25, 0.25, 0.75],
         },
@@ -59,7 +59,7 @@ export const fadeIn = () =>{
         opacity: 0,
         transition: {
           type: "tween",
-          duration: 0.1,
+          duration: 1.5,
           delay: 0.1,
           ease: [0.25, 0.6, 0.3, 0.8],
         },
@@ -69,7 +69,7 @@ export const fadeIn = () =>{
         opacity: 1,
         transition: {
           type: "tween",
-          duration: 1.3,
+          duration: 1.5,
           delay: 0.1,
           ease: [0.25, 0.25, 0.25, 0.75],
         },
@@ -134,7 +134,7 @@ export const fadeIn = () =>{
         opacity: 0,
         transition: {
           type: "tween",
-          duration: 0.1,
+          duration: 1.5, // Aumenta la duración aquí
           delay: 0.1,
           ease: [0.25, 0.6, 0.3, 0.8],
         },
@@ -143,7 +143,7 @@ export const fadeIn = () =>{
         opacity: 1,
         transition: {
           type: "tween",
-          duration: 1.3,
+          duration: 1.5, // Aumenta la duración aquí
           delay: 0.1,
           ease: [0.25, 0.25, 0.25, 0.75],
         },
@@ -151,3 +151,17 @@ export const fadeIn = () =>{
     };
   };
   
+
+  export const fadeTrainers = (index) => {
+    const duration = 0.5 + index * 0.2; // Ajusta la velocidad aquí
+    return {
+      hidden: { opacity: 0, scale: 0.9 },
+      visible: {
+        opacity: 1,
+        scale: 1,
+        transition: {
+          duration:duration,
+        },
+      },
+    };
+  };

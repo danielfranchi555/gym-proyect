@@ -1,6 +1,6 @@
 import React from 'react'
-import heroImage3 from '../../../public/images/fitness.png'
-import heroImage4 from '../../../public/images/fitness-mobile.jpeg'
+import heroImage3 from '../../../public/images/hero-min.png'
+import heroImage4 from '../../../public/images/mobile-min.jpeg'
 import Image from 'next/image'
 import Link from 'next/link'
 import Fade from '../MotionTransition/Fade'
@@ -8,7 +8,7 @@ import { Button } from '../ui/button'
 
 const Hero = () => {
   return (
-    <div className="text-white w-full h-screen">
+    <div id='home' className="text-white w-full h-screen">
       <Fade>
         <Image src={heroImage4} width='auto' height='auto' alt='image' className='md:hidden w-full h-screen object-cover top-0 left-0' />
         <Image src={heroImage3} width='auto' height='auto' alt='image' className=' hidden md:block w-full h-screen object-cover top-0 left-0' />

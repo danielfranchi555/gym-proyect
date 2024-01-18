@@ -8,7 +8,7 @@ const Footer = () => {
                 <p className='text-[8px]'>Build strength and confidence at our gym with state-of-the-art equipment, personalized training, and a motivating community</p>
             </div>
             <div className='hidden md:block'>
-                <p className='text-[10px]'>Developed By Daniel Franchi</p>
+                <p className='text-1xl'>Developed By Daniel Franchi</p>
             </div>
             <div className='h-[80px] flex flex-col justify-around items-start '>
                 <p className=' font-bold'>Contact</p>
